@@ -1,0 +1,59 @@
+.main-container {
+    border: 2px solid #eee;
+    box-shadow: 2px 8px 20px #ddd;
+    margin: 20px auto;
+    width: 96vw;
+}
+.cantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.btn  {
+    width: 40px;
+    height: 30px;
+    margin: 0 8px;
+    font-weight: 800;
+    background-color: rgb(26, 192, 184);
+    cursor: pointer;
+    border: none;
+    transition: 0.6s ;
+}
+.btn:hover {
+    background-color: rgb(6, 153, 146);
+}
+.num-items {
+    text-align: center;
+}
+.delete {
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(199, 197, 197);
+    transition: 0.3s;
+}
+.delete:hover {
+    background-color: rgb(233, 86, 86);
+}
+.total {
+    text-align: end;
+    margin: 12px;
+    border: 2px solid #eee;
+    box-shadow: 2px 8px 20px #ddd;
+    padding: 20px 14px;
+}
+.none-cart {
+    border: 2px solid #eee;
+    box-shadow: 2px 8px 20px #ddd;
+    text-align: center;
+    font-size: 28px;
+    max-width: 52vw;
+    padding: 20px;
+    margin: 50px auto;
+}

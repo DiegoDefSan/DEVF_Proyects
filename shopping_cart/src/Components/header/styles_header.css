@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+}
+.options, .opt-active {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    position:relative;
+}
+.arrow2, .arrow1 {
+    width: 40px; 
+    height: 10px; 
+    border-radius: 20px;
+    margin: 8px 0;
+    background-color: black;
+    transition: .4s;
+}
+.opt-active .arrow1 {transform: rotate(45deg);}
+.opt-active .arrow2 {transform: translateY(-18px) rotate(-45deg) ;}
+header .logo a{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    transition: .4s;
+}
+nav ul li a:hover{
+    color: rgb(26, 192, 184);
+}
+nav .nav-cart {
+    position: relative;
+    transform: translateY(10%);
+}
+.input-container {
+    position: relative;
+    transform: translateY(10%);
+}
+nav .input-container img {
+    cursor: pointer;
+    margin-left: 20px;
+}
+nav .nav-cart img {
+    cursor: pointer;
+}
+nav .nav-cart span {
+    position: absolute;
+    top: -12px;
+    right: -7px;
+    background-color: rgb(26, 192, 184);
+    padding: 3px 5px;
+    font-size: 10px;
+    color: black;
+    border-radius: 50%;
+}
+.input-not {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s linear;
+}
+.input-active {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    top: 70px;
+    z-index: 10;
+    transition: 0.3s linear;
+    margin: auto;
+}
+#input-text{
+	width: 67%;
+	padding: 10px 10px;
+    outline: 0;
+    border: 2px solid rgb(224, 224, 224);
+}
+#input-submit{
+	border: 0px;
+	background: none;
+	background-color: rgb(26, 192, 184);
+    border-radius: 2px;
+	color: black;
+	padding: 12px 20px;
+    cursor:pointer;
+}
+
+@media (max-width: 800px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        top:0;
+        left: -100%;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.4s linear;
+        background-color: white;
+        opacity: 1;
+        z-index: 99;
+        margin: 0;
+    }
+    .options, .opt-active {
+        display: block;
+        z-index: 100;
+    }
+    .toggle {
+        left: 0;
+    }
+}

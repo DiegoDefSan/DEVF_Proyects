@@ -1,0 +1,50 @@
+.container {
+    border: 2px solid #eee;
+    box-shadow: 2px 8px 20px #ddd;
+    margin: 12px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    min-height: 450px;
+    width: 94vw;
+}
+.cont1 {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont1 img {
+    max-width: 400px;
+    min-width: 290px;
+    height: 400px;
+    display: block;
+    margin: 25px;
+}
+.cont2 {
+    max-width: 500px;
+    min-width: 290px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cont2 .price-cat, .rating {
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+.cont2 .add-cart {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(26, 192, 184);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+.cont2 .add-cart:hover {
+    color: rgb(250, 233, 212);
+    background-color: rgb(6, 153, 146);
+}
